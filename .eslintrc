@@ -1,0 +1,35 @@
+{
+    "parser": "babel-eslint",
+    "extends": ["airbnb", "prettier", "prettier/react"],
+    "plugins": ["react", "prettier"],
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true,
+        "jest": true
+    },
+    "settings": {
+        "import/resolver": {
+            "webpack": {
+                "config": "webpack.extra.js"
+            }
+        }
+    },
+    "rules": {
+        "indent": ["error", 4, { "SwitchCase": 1 }],
+        "import/extensions": "off",
+        "import/no-duplicates": "off",
+        "import/order": "off",
+        "import/no-self-import": "off",
+        "import/no-cycle": "off",
+        "import/no-named-as-default": "off",
+        "import/no-named-as-default-member": "off",
+        "import/no-extraneous-dependencies": "off",
+        "import/named": "off",
+        "global-require": "off",
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "class-methods-use-this": "off",
+        "import/no-unresolved": "off",
+        "prettier/prettier": "error"
+    }
+}
